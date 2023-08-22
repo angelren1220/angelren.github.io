@@ -1,56 +1,90 @@
-/* Apply styles to the header */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+/* Custom properties/variables  */
+:root {
+  --main-white: #F6F4EB;
+  --main-light: #91C8E4;
+  --main-blue: #749BC2;
+  --main-dark: #4682A9;
 }
 
-header h1 {
-  font-size: 24px;
+/* Base reset */
+* {
   margin: 0;
-}
-
-nav ul {
-  list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-nav ul li {
-  display: inline;
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 10px;
+html {
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations
+   * default document font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
 }
 
-/* Apply styles to the main content sections */
-main {
-  padding: 20px;
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
 }
 
-section {
-  margin-bottom: 30px;
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+/* Base styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-white);
+}
+
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
 }
 
 h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 4.2rem;
 }
 
-ul li {
-  margin-bottom: 10px;
+ul {
+  list-style: none;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+img {
+  display: block;
+  width: 100%;
 }
