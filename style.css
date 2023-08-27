@@ -159,7 +159,7 @@ img {
 .projects-section-header {
   max-width: 640px;
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
+  
 }
 
 @media (max-width: 28.75em) {
@@ -200,9 +200,7 @@ img {
 }
 
 .project:hover {
-  transform: translateY(-10px);
-  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
-  margin-top: -10px;
+  box-shadow: 1rem 1rem 2rem var(--main-dark);
 }
 
 .project:hover .code {
