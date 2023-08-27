@@ -140,13 +140,50 @@ img {
   background-color: var(--main-dark);
 }
 
-.welcome-section > p {
+.welcome-section h1,
+.welcome-section p {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.welcome-section h1 {
+  animation: fadeInH1 1.5s ease-in-out forwards;
+}
+
+.welcome-section p {
   margin-top: 1rem;
   font-size: 3rem;
   font-weight: 200;
   font-style: italic;
   color: var(--main-white);
+  animation: fadeInP 1.5s ease-in-out forwards;
+  animation-delay: 1s;
 }
+
+/* Keyframes for the h1 fade-in animation */
+@keyframes fadeInH1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for the p fade-in animation */
+@keyframes fadeInP {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* Projects section */
 
