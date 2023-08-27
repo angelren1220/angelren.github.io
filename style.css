@@ -306,6 +306,20 @@ img {
   font-size: 6rem;
 }
 
+.contact-section .contact-section-header h2 span {
+  display: inline-block;
+  animation: jumpText 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+@keyframes jumpText {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
 @media (max-width: 28.75em) {
   .contact-section-header > h2 {
     font-size: 4rem;
