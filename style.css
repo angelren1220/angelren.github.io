@@ -122,10 +122,12 @@ img {
   display: block;
   font-size: 2.2rem;
   padding: 2rem;
+  color: var(--main-dark);
 }
 
 .nav-list a:hover {
   background: var(--main-blue);
+  color: var(--main-white);
 }
 
 /* Welcome section */
@@ -206,6 +208,7 @@ img {
   max-width: 640px;
   margin: 0 auto 6rem auto;
   position: relative;
+  color: var(--main-dark);
 }
 
 .projects-section-header::after {
@@ -302,6 +305,7 @@ img {
 
 .btn-show-all:hover {
   background: var(--main-light);
+  color: var(--main-dark);
 }
 
 .btn-show-all:hover > i {
